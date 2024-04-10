@@ -10,9 +10,15 @@ public void setup(){
 }
 
 public void draw(){
+  fill(#4780CD);
+  stroke(#DA2E09);
   dibujarRectangulos();
 }
 
 public void dibujarRectangulos(){
-  rect(CoorRect.x,CoorRect.y,AnchoRec,AltoRec);
+  for(float x=CoorRect.x;x<width;x+=(AnchoRec+Distancia)){
+    for(float y=CoorRect.y;y<height;y+=(AltoRec+Distancia)){
+      rect(x,y,AnchoRec,AltoRec);
+    }
+  }
 }
