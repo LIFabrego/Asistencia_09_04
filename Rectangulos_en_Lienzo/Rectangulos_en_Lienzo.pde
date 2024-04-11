@@ -10,7 +10,7 @@ public void setup(){
 }
 
 public void draw(){
-  fill(#4780CD);
+  fill(#FAEF15);
   stroke(#DA2E09);
   dibujarRectangulos();
 }
